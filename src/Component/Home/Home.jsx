@@ -28,7 +28,7 @@ const Home = () => {
         <img
           src="/Profile.jpg" // Put your image in public folder with this name
           alt="Rahul"
-          className="w-80 h-80 rounded-full object-cover border-4 border-green-400 shadow-lg "
+          className="w-60 h-60 rounded-full object-cover border-4 border-green-400 shadow-lg "
         />
       </div>
     </section>
