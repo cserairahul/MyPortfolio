@@ -1,13 +1,13 @@
 const Projects = () => {
   const projectList = [
     {
-      title: "Weather App",
-      description: "A simple weather app using React & OpenWeather API.",
-      github: "https://github.com/your-username/weather-app",
-      demo: "https://weather-app-demo.netlify.app",
+      title: "BG Changeer App",
+      description: "A simple BG Changer app using React & Tailwind css.",
+      github: "https://github.com/cserairahul/React-series/blob/main/04bgChanger",
+      demo: "https://04bg-changer-three.vercel.app/",
     },
     {
-      title: "To-Do App",
+      title: "Password Generetor App",
       description: "Task management app using React and local storage.",
       github: "https://github.com/your-username/todo-app",
       demo: "https://todo-demo.netlify.app",
