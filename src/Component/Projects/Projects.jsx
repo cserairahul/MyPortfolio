@@ -1,15 +1,15 @@
 const Projects = () => {
   const projectList = [
     {
-      title: "BG Changeer App",
-      description: "A simple BG Changer app using React & Tailwind css.",
+      title: "Job Portal",
+      description: "A role-based job portal for seekers to apply by skill.Developed backend with Express and MongoDB; frontend with React",
       github: "https://github.com/cserairahul/React-series/blob/main/04bgChanger",
-      demo: "https://04bg-changer-three.vercel.app/",
+      demo: "",
     },
     {
       title: "Password Generetor App",
       description: "Task management app using React and local storage.",
-      github: "https://github.com/your-username/todo-app",
+      github: "https://github.com/cserairahul/Password_Generator",
       demo: "https://todo-demo.netlify.app",
     },
   ];
