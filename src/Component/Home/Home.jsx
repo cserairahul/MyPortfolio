@@ -7,13 +7,13 @@ const Home = () => {
       {/* Text Part */}
       <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 max-w-xl mt-8 md:mt-0">
         <h1 className="text-4xl md:text-5xl font-bold">Hi, I'm Rahul Kumar Rai</h1>
-        <h2 className="text-2xl font-semibold text-green-400">
-          Web Developer | Problem Solver | Lifelong Learner
+        <h2 className="text-2xl font-semibold text-green-400 text-align: text-center">
+          💻 Full-Stack Developer | API & Cloud Explorer | Continuous Learner
         </h2>
-        <p className="text-gray-400">
-          Building modern, responsive websites using React & Tailwind. With a passion 
-          for clean code and creative solutions, I’m sharpening my skills daily through DSA
-          practice and hands-on internships at CodeSoft & Alpha Intern.
+        <p className="text-gray-400 text-justify">
+          I build modern, responsive applications with JavaScript, React, Express & Next.js.
+           Skilled in REST APIs, debugging, databases (MongoDB/SQL), and cloud (AWS/Azure), 
+           I focus on writing clean code and delivering impactful solutions.
         </p>
         <a
           href="#projects"
