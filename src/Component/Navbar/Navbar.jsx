@@ -6,7 +6,7 @@ import { LiaSignSolid } from "react-icons/lia";
 const Navbar = () => {
   const [isOpen,setIsOpen] = useState(false);
   return (
-    <nav className='bg-blue-900'>
+    <nav className='bg-[#1C352D]'>
      <div className='h-16 items-center flex justify-between'>
      { /*logo*/}
        <div className='text-3xl text-white font-bold px-4'><LiaSignSolid /></div>
