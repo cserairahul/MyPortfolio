@@ -5,7 +5,7 @@ const About = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-white">About Me</h2>
           <p className="text-lg leading-relaxed mb-8">
-            Hey! 👋 I'm <span className="font-semibold text-gray-100">Rahul</span>, a Full-Stack Developer passionate about creating modern, scalable, and user-friendly applications.
+            Hey! I'm <span className="font-semibold text-gray-100">Rahul</span>, a Full-Stack Developer passionate about creating modern, scalable, and user-friendly applications.
              My expertise lies in JavaScript, React, Tailwind css, Express, and Next.js, with strong foundations in REST APIs, debugging, and performance optimization.  
             I’ve also worked with databases (MongoDB & SQL), cloud platforms (AWS & Azure), and CI/CD pipelines, giving me exposure to real-world development workflows.
              Alongside development, I’m actively sharpening my DSA skills and preparing for technical interviews to grow into a well-rounded software engineer.
@@ -26,7 +26,7 @@ const About = () => {
   
           {/* Resume Button */}
           <a
-            href="/My_Resume (98).pdf"  // Place your actual resume in public folder as resume.pdf
+            href="/Rahul_Resume2 (3).pdf"  // Place your actual resume in public folder as resume.pdf
             download
           className="inline-block bg-[#A6B28B] text-black px-6 py-3 rounded-full hover:bg-green-700 transition"
           >

@@ -7,11 +7,17 @@ const Projects = () => {
       demo: "",
     },
     {
-      title: "Password Generetor App",
-      description: "Task management app using React and local storage.",
-      github: "https://github.com/cserairahul/Password_Generator",
+      title: "Food Recipe Finder",
+      description: "A food recipe finder app using React and local storage.",
+      github: "https://github.com/cserairahul/Food_Recipi_Finder",
       demo: "https://todo-demo.netlify.app",
     },
+    {
+      title: "HireLense",
+      description: "Developed an AI-powered resume and job description matcher as a SaaS platform.",
+      github: "https://github.com/cserairahul/Hirelense",
+      demo: "https://todo-demo.netlify.app",
+    }
   ];
 
   return (

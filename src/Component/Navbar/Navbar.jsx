@@ -35,12 +35,12 @@ const Navbar = () => {
      </div>
 
      {/*mobile menu*/}
-     <div className={`${isOpen ? "block":"hidden"} block sm:hidden bg-gray-100 dark:bg-gray-800 space-y-2 pb-3`}>
-        <a href="#home" className='text-gray-600 dark:text-gray-100 text-lg px-4 block'>Home</a>
-        <a href="#about" className='text-gray-600 dark:text-gray-100 text-lg px-4 block'>About</a>
-        <a href="#projects" className='text-gray-600 dark:text-gray-100 text-lg px-4 block'>Project</a>
-        <a href="#certificates" className='text-gray-600 dark:text-gray-100 text-lg px-4 block'>Certificate</a>
-        <a href="#contact" className='text-gray-600 dark:text-gray-100 text-lg px-4 block'>Contact</a>
+     <div className={`${isOpen ? "block":"hidden"} block sm:hidden bg-gray-100 opacity-50 dark:bg-gray-800 space-y-2 pb-3`}>
+        <a href="#home" className='text-black dark:text-gray-100 text-lg px-4 block'>Home</a>
+        <a href="#about" className='text-white-100 dark:text-gray-100 text-lg px-4 block'>About</a>
+        <a href="#projects" className='text-white-100 dark:text-gray-100 text-lg px-4 block'>Project</a>
+        <a href="#certificates" className='text-white-100 dark:text-gray-100 text-lg px-4 block'>Certificate</a>
+        <a href="#contact" className='text-white-100 dark:text-gray-100 text-lg px-4 block'>Contact</a>
      </div>
     </nav>
   )
