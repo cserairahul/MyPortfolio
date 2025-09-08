@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
-import { LiaSignSolid } from "react-icons/lia";
+import { TfiSkype } from "react-icons/tfi";
 import DarkModeToggle from '../darkMode/darkMode';
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
      <div className='h-16 items-center flex justify-between'>
        {/*logo*/}
        <div className='text-3xl text-white dark:text-gray-200 font-bold px-4'>
-         <LiaSignSolid />
+       <TfiSkype />
        </div>
 
        {/*links*/}
