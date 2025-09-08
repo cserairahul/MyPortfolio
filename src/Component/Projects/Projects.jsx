@@ -3,7 +3,7 @@ const Projects = () => {
     {
       title: "Job Portal",
       description: "A role-based job portal for seekers to apply by skill.Developed backend with Express and MongoDB; frontend with React",
-      github: "https://github.com/cserairahul/React-series/blob/main/04bgChanger",
+      github: "https://github.com/cserairahul/Job_Portal",
       demo: "",
     },
     {
