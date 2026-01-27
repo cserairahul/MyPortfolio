@@ -27,7 +27,7 @@ const Home = () => {
       <div className="flex justify-center md:justify-end md:ml-10">
       <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-80 lg:h-80">
         <img
-          src="profile.png"
+          src="portimg.jpg"
           alt="Rahul"
           className="w-full h-full rounded-full object-cover border-4 border-green-400 shadow-lg"
         />
