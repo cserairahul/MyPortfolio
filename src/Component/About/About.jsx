@@ -26,7 +26,7 @@ const About = () => {
   
           {/* Resume Button */}
           <a
-            href="/Rahul_Resume2 (3).pdf"  // Place your actual resume in public folder as resume.pdf
+            href="/Resume_Feb1.pdf"  // Place your actual resume in public folder as resume.pdf
             download
           className="inline-block bg-[#A6B28B] text-black px-6 py-3 rounded-full hover:bg-green-700 transition"
           >

@@ -9,8 +9,8 @@ const Navbar = () => {
     <nav className='bg-[#1C352D] dark:bg-gray-900'>
      <div className='h-16 items-center flex justify-between'>
        {/*logo*/}
-       <div className='text-3xl text-white dark:text-gray-200 font-bold px-4'>
-       <TfiSkype />
+       <div className='h-20 w-20  object-cover px-4'>
+       <img src="portimg.jpg" alt="" className="rounded-full" />
        </div>
 
        {/*links*/}
