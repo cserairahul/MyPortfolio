@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
-import { TfiSkype } from "react-icons/tfi";
 import DarkModeToggle from '../darkMode/darkMode';
 
 const Navbar = () => {
@@ -9,7 +8,7 @@ const Navbar = () => {
     <nav className='bg-[#1C352D] dark:bg-gray-900'>
      <div className='h-16 items-center flex justify-between'>
        {/*logo*/}
-       <div className='h-20 w-20  object-cover px-4'>
+       <div className='h-1 w-15  object-cover px-2' >
        <img src="portimg.jpg" alt="" className="rounded-full" />
        </div>
 
