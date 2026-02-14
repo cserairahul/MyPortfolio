@@ -2,6 +2,23 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
+
+  // 🔗 Add your real social media links here
+  const socialLinks = [
+    {
+      icon: FaGithub,
+      link: "https://github.com/cserairahul",
+    },
+    {
+      icon: FaLinkedin,
+      link: "https://www.linkedin.com/in/rahul-kumar-ray-5372b2291/",
+    },
+    {
+      icon: FaInstagram,
+      link: "https://instagram.com/YOUR_INSTAGRAM_USERNAME",
+    },
+  ];
+
   return (
     <footer className="relative bg-gradient-to-br from-[#0f0c29] via-[#1a1a40] to-[#000000] text-gray-300 py-16 overflow-hidden">
 
@@ -32,17 +49,22 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center gap-8 text-2xl mb-10">
-          {[FaGithub, FaLinkedin, FaInstagram].map((Icon, index) => (
-            <motion.a
-              key={index}
-              href="#"
-              whileHover={{ scale: 1.3, rotate: 10 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-white/10 backdrop-blur-md p-4 rounded-full border border-white/10 hover:border-pink-500 transition"
-            >
-              <Icon />
-            </motion.a>
-          ))}
+          {socialLinks.map((social, index) => {
+            const Icon = social.icon;
+            return (
+              <motion.a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.3, rotate: 10 }}
+                whileTap={{ scale: 0.9 }}
+                className="bg-white/10 backdrop-blur-md p-4 rounded-full border border-white/10 hover:border-pink-500 transition"
+              >
+                <Icon />
+              </motion.a>
+            );
+          })}
         </div>
 
         {/* Copyright */}
