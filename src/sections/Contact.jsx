@@ -1,11 +1,44 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = `Portfolio Contact from ${formData.name}`;
+    const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}
+    `;
+
+    window.location.href = `mailto:rairahul4840@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <section
       id="contact"
-      className="relative min-h-screen flex items-center bg-linear-to-br from-[#0f0c29] via-[#1a1a40] to-[#000000] text-white overflow-hidden"
+      className="relative min-h-screen flex items-center bg-gradient-to-br from-[#0f0c29] via-[#1a1a40] to-[#000000] text-white overflow-hidden"
     >
+
       {/* Background Glow */}
       <div className="absolute w-80 h-80 bg-pink-500 opacity-20 blur-3xl rounded-full top-10 right-20"></div>
 
@@ -22,8 +55,9 @@ const Contact = () => {
           Contact <span className="text-pink-500 glow-text">Me</span>
         </motion.h2>
 
-        {/* Glass Form */}
+        {/* Form */}
         <motion.form
+          onSubmit={handleSubmit}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -36,6 +70,9 @@ const Contact = () => {
             </label>
             <input
               type="text"
+              name="name"
+              required
+              onChange={handleChange}
               placeholder="Enter your name"
               className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-pink-500 transition"
             />
@@ -47,6 +84,9 @@ const Contact = () => {
             </label>
             <input
               type="email"
+              name="email"
+              required
+              onChange={handleChange}
               placeholder="Enter your email"
               className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-pink-500 transition"
             />
@@ -58,6 +98,9 @@ const Contact = () => {
             </label>
             <textarea
               rows="4"
+              name="message"
+              required
+              onChange={handleChange}
               placeholder="Write your message..."
               className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:border-pink-500 transition"
             ></textarea>
